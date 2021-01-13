@@ -1,0 +1,205 @@
+/*=======Base Layout======*/
+
+*::selection {
+    background: #c2f9f6;
+  }
+  
+  * {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #2D3945;
+    box-sizing: border-box;
+  }
+  
+  main {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+     
+  p {
+    font-weight: 300;
+  }
+  
+  header h1 {
+    background: linear-gradient(#141414 10%, #5e6061 140%);
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    text-transform: uppercase;
+  }
+  
+  .header-bottom {
+    border-top: 5px #2D3945 solid;
+    height: 10px;
+    border-bottom: 2px #2D3945 solid;
+    border-left: 0;
+    border-right: 0;
+  }
+  
+  .mid-page {
+    border: 1px solid #2D3945;
+  }
+  
+  main,
+  footer {
+    padding: 0 40px;
+  }
+  
+  .intro {
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .intro p {
+    color: #999;
+    margin-top: 15px;
+    line-height: 1.5;
+  }
+  
+  /*=======Form Styles======*/
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form legend {
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+  }
+  
+  fieldset {
+    border: 0;
+    margin: 30px 0;
+  }
+  
+  .form-field {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-field label {
+    margin-bottom: 5px;
+    color: #2D3945;
+    font-weight: 300;
+    color: #46698B
+  }
+  
+  .form-field input::placeholder {
+    color: #ccc;
+    text-align: right;
+    font-style: italic;
+  }
+  
+  .form-field input,
+  .form-field select,
+  .form-field textarea {
+    background-color: #EFF0F1;
+    border: #EFF0F2 1px solid;
+    border-radius: 4px;
+    padding: 10px 15px;
+    transition: border 0.5s, box-shadow 0.3s;
+  }
+  
+  .form-field input:focus,
+  .form-field select:focus,
+  .form-field textarea:focus {
+    outline: none;
+    border: #46698B 1px solid;
+    box-shadow: 0 0 2px #2D3945;
+  }
+  
+  .form-field #postcode {
+    max-width: 190px;
+  }
+  
+  .form-field+.form-field {
+    margin-top: 20px;
+  }
+  
+  .newslettertype-option label,
+  .newsletterformat-option label {
+    margin-left: 15px;
+  }
+  
+  .newslettersection textarea {
+    min-height: 100px;
+  }
+  
+  button {
+    background-color: #4EBBB5;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin-bottom: 50px;
+    box-shadow: 0 0 2px #121313;
+  }
+  
+  footer p {
+    text-align: center;
+    font-weight: 400;
+    font-style: italic;
+    color: #999;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  /*=======Media Queries======*/
+  
+  @media (min-width:768px) {
+  
+    main,
+    footer {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+  
+    .intro {
+      padding: 60px;
+    }
+  
+    .intro h2 {
+      font-size: 1.8em;
+    }
+  
+    .intro p {
+      margin-top: 5px;
+    }
+  
+    .main-form .form-field {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .form-field label {
+      font-weight: 500;
+    }
+  
+    .main-form .form-field label {
+      width: 150px;
+    }
+  
+    .main-form .form-field input {
+      flex: 3;
+      align-self: flex-start;
+    }
+  
+    .form-field input,
+    .form-field select,
+    .form-field textarea {
+      border: #EFF0F2 2px solid;
+    }
+  
+    .form-field input:focus,
+    .form-field select:focus,
+    .form-field textarea:focus {
+      outline: none;
+      border: #4d6f91 2px solid;
+    }
+  }
